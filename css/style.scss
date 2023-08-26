@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap');
+
+/*Medidas para escritorio*/
+
+@media (min-width: 700px) {
+  .logo {
+    width: 160px;
+    height: 42px;
+    margin-left: 10px;
+  }
+
+  .dispon {
+    font-size: 64px;
+  }
+
+  .slogan {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    padding-left: 20px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 50px;
+  }
+
+  .imglink {
+    width: 400px;
+    height: 450px;
+  }
+
+  h3 {
+    font-size: large;
+  }
+  a {  
+  font-size: 20px;
+  }
+  
+.backto {
+  margin-top: 20px;
+  margin-left: 90%;
+  color: black;
+  width: 40px;
+  height: 40px;
+ }
+
+.prendas {
+  width: 350px;
+  height: 450px;
+  margin: 40px;
+  background-color: rgba(128, 128, 128, 0.233);
+  border-color: black;
+  border-radius: 20px;
+}
+.prenco {
+  margin: 50px;
+  padding: 200px;
+}
+
+
+.contact-container {
+  max-width: 300px;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  margin-top: 170px;
+}
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    ". . ."
+    "obj1 obj2 obj3"
+    "obj4 obj5 obj6";
+  width: 60%;
+  height: 60%;
+}
+
+.call{
+  margin-left: 90%;
+  margin-bottom: 20px;
+}
+.square{
+  margin-left: 90%;
+}
+
+.prendas {
+  width: 350px;
+  height: 450px;
+  margin: 40px;
+  background-color: rgba(128, 128, 128, 0.233);
+  border-color: black;
+  border-radius: 20px;
+}
+.prenco {
+  margin: 40px;
+  padding: 200px;
+}
+
+.obj1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  grid-area: obj1;
+}
+
+.obj2 {
+  grid-area: obj2;
+}
+
+.obj3 {
+  grid-area: obj3;
+}
+
+.obj4 {
+  grid-area: obj4;
+}
+
+.obj5 {
+  grid-area: obj5;
+}
+
+.obj6 {
+  grid-area: obj6;
+}
+h2 {
+  text-align: center;
+}
+
+
+
+/*Medidas para pantallas pequeñas*/
+
+@media (max-width: 700px) {
+
+  .slogan {
+    font-size: smaller;
+    padding-left: 20px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 32px;
+    margin-left: 10px;
+  }
+
+  .imglink {
+    margin-left: 0%;
+    width: 300px;
+    height: 350px;
+  }
+
+  h3 {
+    font-size: smaller;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .dispon {
+    font-size: 30px;
+  }
+
+  .image-container {
+    align-items: center;
+    margin-top: 30px;
+    padding: 50px;
+  }
+
+  .div-centrado{
+    max-width: 400px;
+  }
+
+  .call{
+    margin-left: 80%;
+    margin-bottom: 10px;
+  }
+  .square{
+    margin-left: 80%;
+  }
+  .backto {
+    margin-top: 20px;
+    margin-left: 82%;
+    color: black;
+    width: 30px;
+    height: 30px;
+   }
+  .prendas {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+  }
+
+  .prenco {
+    margin: 50px;
+    padding: 200px;
+    max-width: 400px;
+  }
+
+  
+.contact-container {
+  max-width: 300px;
+  text-align: center;
+  margin-left: 12%;
+  margin-top: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  h4 {
+    font-size: 26px;
+  }
+
+  ul {
+    text-align: center;
+    margin-top: 75%;
+  }
+
+  a {  
+    font-size: 15px;
+  }
+
+
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.imglink {
+  position: relative;
+  animation: moverIzquierda 1s;
+}
+
+@keyframes moverIzquierda {
+  from {
+    right: 75px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+.imglink:hover {
+  transform: scale(1.025);
+}
+
+.div-centrado {
+  width: 500px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 250px;
+}
+
+.texto {
+  margin-top: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.prendas:hover {
+  transform: scale(1.025);
+}
+
+.titulo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+}
+
+.titulo {
+  animation: changeColors 5s infinite;
+}
+
+@keyframes changeColors {
+  0% {
+    color: black
+  }
+
+  25% {
+    color: rgb(0, 4, 255);
+  }
+
+  50% {
+    color: rgb(92, 0, 128);
+  }
+
+  75% {
+    color: rgb(255, 0, 98);
+  }
+}
+
+.prenco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: moverIzquierda 1s;
+}
+
+body {
+  background-image: url(../Resources/Fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.square {
+  position: static;
+  width: 50px;
+  height: 50px;
+}
+
+.call {
+  position: static;
+  width: 50px;
+  height: 50px;
+}
+
+li {
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.dispon {
+  font-family: 'Dancing Script', cursive;
+}
+.sub {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  margin-top: 15px;
+}
+.deja {
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+  padding: 5px;
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
