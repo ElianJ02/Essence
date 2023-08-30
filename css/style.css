@@ -313,6 +313,14 @@ a {
   color: black;
 }
 
+.foot {
+  background-color: rgba(177, 177, 177, 0.368627451);
+  max-height: 1800px;
+  height: 280px;
+  text-align: center;
+  margin-top: 10%;
+}
+
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -371,4 +379,4 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}/*# sourceMappingURL=Style.css.map */
+}/*# sourceMappingURL=style.css.map */
